@@ -56,7 +56,7 @@
               //  Crea due array che hanno un numero di elementi diversi.
               //  Aggiungi elementi all'array che ha meno elementi fino a
               //  quando ne avrà tanti quanti l'altro.
-              
+
               // var arr1 = [1, 14, 23, 5, 333, 4, 5];
               // var arr2 = [12, 2];
               //
@@ -104,6 +104,23 @@
 
               //  Chiedere all'utente un valore limite, poi richiedere all'utente una serie di valori
               //  finche' la somma non supera il valore limite
+
+              var limit = parseInt(prompt('inserisci il valore limite: '));
+              var sum = 0;
+              var list = [];
+
+
+              while (sum < limit) {
+                var numUser = parseInt(prompt('inserisci un numero; '));
+                list.push(numUser);
+                sum += numUser;
+              }
+
+              console.log(list);
+              console.log('il tuo limite era: ' + )
+
+
+
 
               //  Crea due tag div con due id diversi.
               //  Un div avrà il testo colorato di rosso mentre l'altro di verde.
