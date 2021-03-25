@@ -40,6 +40,16 @@ function init() {
   var maxUser = parseInt(prompt('inserisci il limite massimo'));
   var minUser = parseInt(prompt('inserisci il limite minimo'));
 
+  while (minUser> maxUser || minUser > arrayPc.length || maxUser > arrayPc.length) {
+    alert('Valori non validi, riprovare!');
+
+    lim = parseInt(prompt("inserisci il numero di elementi dell'array"))
+
+    arrayPc = rndArray(lim);
+    maxUser = parseInt(prompt('inserisci il limite massimo'));
+    minUser = parseInt(prompt('inserisci il limite minimo'));
+  }
+
   splitter(minUser, maxUser, arrayPc);
 
 }
