@@ -12,9 +12,12 @@ function random() {
 
 function rndArray(limit) {
   var arr = [];
+  var numRnd;
   for (var i = 0; i < limit; i++) {
-
+    numRnd = random();
+    arr.push(numRnd);
   }
+  return arr;
 }
 
 function splitter(min, max, array) {
@@ -33,11 +36,11 @@ function init() {
 
   var lim = parseInt(prompt("inserisci il numero di elementi dell'array"));
 
-  var arrayPc = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+  var arrayPc = rndArray(lim);
   var maxUser = parseInt(prompt('inserisci il limite massimo'));
   var minUser = parseInt(prompt('inserisci il limite minimo'));
 
-  splitter(min, max, array);
+  splitter(minUser, maxUser, arrayPc);
 
 }
 
