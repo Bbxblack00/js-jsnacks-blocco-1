@@ -2,7 +2,11 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <title></title>
+    <script src="js/esercizionuovo.js">
+
+    </script>
     <style media="screen">
       .til{
         text-align: center;
@@ -212,51 +216,51 @@
 
 
 
-              var studenti = [
-                // primo studente
-                {
-                  'nome': 'Giovanni',
-                  'cognome': 'Bianchi',
-                  'eta': 25
-                },
-                // secondo studente
-                {
-                  'nome': 'Mario',
-                  'cognome': 'Rossi',
-                  'eta': 30
-                },
-                // terzo studente
-                {
-                  'nome': 'Francesco',
-                  'cognome': 'Verdi',
-                  'eta': 21
-                },
-              ];
-
-              var newUser = {
-                'nome': '',
-                'cognome': '',
-                'eta': ''
-              };
-
-
-
-              for (var a in newUser) {
-
-                var dataName = prompt("inserisci il nome, il cognome e l'età studente, in questi prompt: ");
-
-                newUser[a] = dataName;
-              }
-
-              studenti.push(newUser);
-
-
-              for (var i = 0; i < studenti.length; i++) {
-                for (var a in studenti[i]) {
-                  var dataStudent = 'studente' + '.' + a + ' = ' + studenti[i][a];
-                  console.log(i, dataStudent);
-                }
-              }
+              // var studenti = [
+              //   // primo studente
+              //   {
+              //     'nome': 'Giovanni',
+              //     'cognome': 'Bianchi',
+              //     'eta': 25
+              //   },
+              //   // secondo studente
+              //   {
+              //     'nome': 'Mario',
+              //     'cognome': 'Rossi',
+              //     'eta': 30
+              //   },
+              //   // terzo studente
+              //   {
+              //     'nome': 'Francesco',
+              //     'cognome': 'Verdi',
+              //     'eta': 21
+              //   },
+              // ];
+              //
+              // var newUser = {
+              //   'nome': '',
+              //   'cognome': '',
+              //   'eta': ''
+              // };
+              //
+              //
+              //
+              // for (var a in newUser) {
+              //
+              //   var dataName = prompt("inserisci il nome, il cognome e l'età studente, in questi prompt: ");
+              //
+              //   newUser[a] = dataName;
+              // }
+              //
+              // studenti.push(newUser);
+              //
+              //
+              // for (var i = 0; i < studenti.length; i++) {
+              //   for (var a in studenti[i]) {
+              //     var dataStudent = 'studente' + '.' + a + ' = ' + studenti[i][a];
+              //     console.log(i, dataStudent);
+              //   }
+              // }
 
 
 
